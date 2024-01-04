@@ -388,17 +388,9 @@ def ui_batched(launch_kwargs):
     with gr.Blocks() as demo:
         gr.Markdown(
             """
-            # MusicGen
+            # DIAMONIK7777 - MusicGen
 
-            This is the demo for [MusicGen](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md),
-            a simple and controllable model for music generation
-            presented at: ["Simple and Controllable Music Generation"](https://huggingface.co/papers/2306.05284).
-            <br/>
-            <a href="https://huggingface.co/spaces/facebook/MusicGen?duplicate=true"
-                style="display: inline-block;margin-top: .5em;margin-right: .25em;" target="_blank">
-            <img style="margin-bottom: 0em;display: inline;margin-top: -.25em;"
-                src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>
-            for longer sequences, more control and no queue.</p>
+            
             """
         )
         with gr.Row():
@@ -448,25 +440,7 @@ def ui_batched(launch_kwargs):
         gr.Markdown("""
         ### More details
 
-        The model will generate 15 seconds of audio based on the description you provided.
-        The model was trained with description from a stock music catalog, descriptions that will work best
-        should include some level of details on the instruments present, along with some intended use case
-        (e.g. adding "perfect for a commercial" can somehow help).
-
-        You can optionally provide a reference audio from which a broad melody will be extracted.
-        The model will then try to follow both the description and melody provided.
-        For best results, the melody should be 30 seconds long (I know, the samples we provide are not...)
-
-        You can access more control (longer generation, more models etc.) by clicking
-        the <a href="https://huggingface.co/spaces/facebook/MusicGen?duplicate=true"
-                style="display: inline-block;margin-top: .5em;margin-right: .25em;" target="_blank">
-            <img style="margin-bottom: 0em;display: inline;margin-top: -.25em;"
-                src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>
-        (you will then need a paid GPU from HuggingFace).
-        If you have a GPU, you can run the gradio demo locally (click the link to our repo below for more info).
-        Finally, you can get a GPU for free from Google
-        and run the demo in [a Google Colab.](https://ai.honu.io/red/musicgen-colab).
-
+        
         See [github.com/facebookresearch/audiocraft](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)
         for more details. All samples are generated with the `stereo-melody` model.
         """)
